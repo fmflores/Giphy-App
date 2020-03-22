@@ -62,8 +62,10 @@ function appendGiphy(data) {
     }
 
 }
-
+// click event handler with callback function to create a new button from user input
 $("#btn-submit").on("click", function() {
-    $("")
+    event.preventDefault();
+    var newAnimal = $("#addAnimal").val().trim();
+        $("#btn-div").append(`<button class="btn btn-secondary">${newAnimal}</button>`)
 })
 // 
